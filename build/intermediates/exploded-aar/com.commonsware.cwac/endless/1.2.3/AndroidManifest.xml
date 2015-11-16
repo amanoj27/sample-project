@@ -1,0 +1,4 @@
+<!-- From: file:/home/mmurphy/stuff/CommonsWare/projects/CWAC/EndlessAdapter/endless/AndroidManifest.xml --><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.commonsware.cwac.endless">
+    <uses-sdk android:minSdkVersion="3"/>
+    <application/>
+</manifest>

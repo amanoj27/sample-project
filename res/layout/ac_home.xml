@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:text="Google Could POC"
+            android:textColor="@android:color/black"
+			android:layout_alignParentTop="true"
+			android:layout_centerHorizontal="true"
+			android:layout_marginTop="50dp"
+			android:id="@+id/loginTitle" />
+
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@android:drawable/ic_menu_myplaces"
+			android:id="@+id/img_userlogo"
+            android:layout_marginTop="5dp"
+			android:layout_alignTop="@+id/et_username"
+			android:layout_toLeftOf="@+id/et_username"
+			android:layout_toStartOf="@+id/et_username" />
+
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/img_userlogo"
+			android:layout_marginTop="25dp"
+			android:layout_alignLeft="@+id/img_userlogo"
+			android:src="@android:drawable/ic_secure"
+			android:layout_marginLeft="5dp"
+			android:id="@+id/img_lock" />
+
+		<EditText
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/loginTitle"
+			android:layout_marginTop="50dp"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:hint="email id"
+			android:id="@+id/et_username"
+            android:enabled="false"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray"
+			android:layout_alignRight="@+id/loginTitle"
+			android:layout_alignEnd="@+id/loginTitle"
+			android:layout_alignLeft="@+id/loginTitle"
+			android:layout_alignStart="@+id/loginTitle" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/et_username"
+            android:layout_marginLeft="7dp"
+            android:layout_alignLeft="@id/img_userlogo"
+            android:layout_alignRight="@id/et_username"
+            android:background="@android:color/darker_gray">
+
+        </View>
+
+		<EditText
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:hint="password"
+            android:enabled="false"
+            android:textColorHint="@android:color/darker_gray"
+            android:textColor="@android:color/black"
+			android:id="@+id/et_password"
+			android:layout_marginTop="10dp"
+			android:layout_below="@+id/img_userlogo"
+			android:layout_alignLeft="@+id/et_username"
+			android:layout_alignStart="@+id/et_username"
+			android:layout_alignRight="@+id/et_username"
+			android:layout_alignEnd="@+id/et_username" />
+
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="LOG IN"
+			android:id="@+id/btn_login"
+            android:enabled="false"
+            android:textColor="@android:color/black"
+			android:layout_centerHorizontal="true"
+			android:layout_marginTop="15dp"
+			android:layout_below="@+id/et_password" />
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/btn_login"
+			android:layout_marginTop="30dp"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:text="OR"
+            android:textColor="@android:color/black"
+			android:layout_centerHorizontal="true"
+			android:id="@+id/tv_or" />
+
+		<com.google.android.gms.common.SignInButton
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text=""
+			android:layout_centerHorizontal="true"
+			android:id="@+id/btn_gplus_login"
+			android:layout_marginTop="30dp"
+			android:visibility="visible"
+			android:layout_below="@+id/tv_or" />
+
+
+
+	</RelativeLayout>
+</ScrollView>
